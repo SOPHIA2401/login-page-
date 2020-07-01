@@ -6,3 +6,6 @@ form legend{
   font-size: larger;
   color:rgb(163, 46, 46)
 }
+fieldset{
+  background:linear-gradient(to right bottom ,rgb(182, 243, 102) 20%, rgb(145, 235, 145) 35%, rgb(153, 153, 216) 100%);
+}
