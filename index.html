@@ -12,10 +12,11 @@
 </head>
 <body>
   <div class="container">
+    <div class="body"></div>
     <div class="row">
         <div class="col-12 col-sm-8 offset-sm-4 col-md-4 offset-md-8">
-          <form action="" method="">
-            <fieldset class="form-control">
+          <form action="" method="POST" name="loginForm" onsubmit="checkform(event.preventDefault())">
+            <fieldset>
             <legend>Sign Up Form For Establishment Representative Owner</legend>
             <div class="form-group row">
                 <label for="firstName" class="col-12 col-md-4 col-form-label">First Name</label>
@@ -44,7 +45,7 @@
             <div class="form-group row">
                 <label for="contact" class="col-12 col-md-4 col-form-label">Contact No.</label>
                 <div class="col-12 col-md-8">
-                  <input type="tel" pattern="^\d{10}$" class="form-control" id="contact" name="contact" placeholder="9********0" required/>
+                  <input type="tel" minlength="10" maxlength="10" class="form-control" id="contact" name="contact" placeholder="9********0" required/>
                 </div>   
             </div>
             <div class="form-group row">
@@ -52,6 +53,13 @@
                 <div class="col-12 col-md-8">
                   <input class=" form-control" id="verificationCode" name="verificationCode" placeholder="Code" required/>
                 </div>   
+              <br>
+              <div class="capbox">
+
+              <div id="CaptchaDiv"></div>
+              <input type="hidden" id="txtCaptcha">
+              </div>
+              <br><br>
             </div>
             <div class="form-group row offset-md-5 offset-sm-5">
                 <div class="form-inline">
@@ -66,5 +74,9 @@
         </div>
     </div>
   </div>
+  
+  <!-- <script type="text/javascript">
+    function checkform(form){alert("hi");console.log(form)}
+  </script> -->
 </body>
 </html>

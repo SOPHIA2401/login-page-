@@ -2,10 +2,66 @@
   margin: 0px auto;
   padding: 0px auto;
 }
+body{
+  background-image: url('https://assets.nst.com.my/images/articles/asing.jpg_1519691648.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
 form legend{
   font-size: larger;
-  color:rgb(163, 46, 46)
+  font-weight: bold;
+  color:rgb(251, 125, 36);
 }
-fieldset{
-  background:linear-gradient(to right bottom ,rgb(182, 243, 102) 20%, rgb(145, 235, 145) 35%, rgb(153, 153, 216) 100%);
+fieldset{padding:10px 20px;border: 2px solid whitesmoke;}
+fieldset, .form-control{
+  background-color: rgba(255, 255, 255,0.2);
+  /* background:linear-gradient(to right bottom ,rgb(198, 240, 142) 20%, rgb(145, 235, 145) 35%, rgb(153, 153, 216) 100%); */
 }
+form label{font-weight: bolder; color: rgb(247, 244, 242);}
+form .form-control::placeholder{color: white;}
+form .form-control{border: 1px solid white}
+form .form-control:focus{background-color: teal;}
+
+/* COMPACT CAPTCHA */
+
+.capbox {
+	background-color: #BBBBBB;
+	background-image: linear-gradient(#BBBBBB, #9E9E9E);
+	border: #2A7D05 0px solid;
+	border-width: 2px 2px 2px 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	display: inline-block;
+	padding: 5px 8px 5px 8px;
+  border-radius: 4px 4px 4px 4px;
+	}
+
+.capbox-inner {
+	font: bold 12px arial, sans-serif;
+	color: #000000;
+	background-color: #E3E3E3;
+	margin: 0px auto 0px auto;
+	padding: 3px 10px 5px 10px;
+	border-radius: 4px;
+	display: inline-block;
+	vertical-align: middle;
+	}
+
+#CaptchaDiv {
+	color: #000000;
+  font: normal 25px Impact, Charcoal, arial, sans-serif;
+  /* font-variant:small-caps; */
+  font-style: italic;
+  text-decoration: line-through;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	user-select: none;
+	display: inline-block;
+	padding: 3px 14px 3px 8px;
+	margin-right: 4px;
+	border-radius: 4px;
+	}
